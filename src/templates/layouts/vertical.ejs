@@ -1,0 +1,48 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Item Carousel Cards</title>
+
+    <!-- Cdn Bootstrap -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/css/vertical.css">
+</head>
+
+<body class="d-flex justify-content-center align-items-center position-relative">
+    <section class="d-flex flex-column pc-300x600">
+        <div><img src="/img/ads_symbol.png" alt="advertising" class="advertising_symbol"></div>
+        <!-- Header -->
+        <%- include('../partials/header.ejs') %>
+        <!-- Body -->
+        <%- include('../partials/banner.ejs') %>
+        <%- include('../carousel/vertical/vertical.ejs',{step: 3}) %>
+        <!-- Footer -->
+        <%- include('../partials/footer.ejs') %>
+    </section>
+    <a href="/" class="ads_home-btn">Quay lại...</a>
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="module" src="/js/app.js"></script>
+    <script type="module">
+        import { Sound, Vertical300x600 } from '/js/app.js';
+        document.addEventListener("DOMContentLoaded", function () {
+            Sound();
+            Vertical300x600();
+        });
+    </script>
+</body>
+
+</html>

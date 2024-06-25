@@ -1,0 +1,106 @@
+@import "./base.scss";
+@import "./responsive.scss";
+@import "./horizontal.scss";
+
+.advertising_symbol {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+.ads_header {
+  height: fit-content;
+  padding: 10px 16px;
+  margin-top: 6px;
+  margin-bottom: 0;
+  .ads_slogan {
+    width: auto;
+    height: fit-content;
+    font-size: 18px;
+  }
+  .ads_logo {
+    height: 32px;
+    width: auto;
+  }
+}
+.ads_footer {
+  height: 36px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.ads_body {
+  padding: 0 4px;
+  height: 182px;
+  margin-bottom: 24px;
+
+  .ads_banner {
+    display: inline-block;
+    width: 324px;
+    margin: 0 8px;
+    .ads_banner_video {
+      max-height: fit-content;
+      height: 100%;
+    }
+  }
+  .carousel-screenX-660 {
+    display: inline-block;
+    width: 288px;
+    margin: 0 8px;
+    .carousel {
+      height: 100%;
+      margin: 0;
+      .slick-list {
+        height: 100%;
+        .carousel-item {
+          padding: 12px;
+          height: 100%;
+          width: 288px;
+          margin: 0;
+          box-shadow: none;
+          border-radius: 0;
+          background-color: #fff;
+          border: 0.7px solid #e2e2e2;
+          .item_img {
+            width: 128px;
+            height: 128px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 0.7px solid #e2e2e2;
+            margin-bottom: 0;
+          }
+          .item_name {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18.2px;
+            text-align: left;
+            color: #333 !important;
+            margin-bottom: 12px;
+          }
+          .item_des {
+            color: #474747;
+            margin-top: 8px;
+            margin-bottom: 12px;
+            text-align: left;
+          }
+          .item_more {
+            display: block;
+            margin: 0 auto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.4px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+      .slick-dots {
+        bottom: -17px;
+        zoom: 0.9;
+        li {
+          margin: 0 -2px;
+        }
+      }
+    }
+  }
+}

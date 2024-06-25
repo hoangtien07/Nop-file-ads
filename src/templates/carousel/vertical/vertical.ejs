@@ -1,0 +1,35 @@
+<div class="ads_items card position-relative mt-3">
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            <% for (let i=0; i < items.length; i += step) { %>
+                <div class="carousel-item <%= i === 0 ? 'active' : '' %>">
+                    <div class="row h-100 align-items-center flex-column">
+                        <% for (let j=i; j < i + step && j < items.length; j++) { %>
+
+                            <%- include('item', {item: items[j]}); %>
+
+                            <% } %>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+    <div class="carousel-btn-control">
+        <div class="btn btn-prev">
+            <svg width="14" height="14" viewBox="0 0 15 14" class="svg-control" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.473242" y="13.6" width="13.2" height="13.2" rx="6.6" transform="rotate(-90 0.473242 13.6)"
+                    class="svg-control-round" stroke-width="0.8" />
+                <path d="M10.5732 8.38538L7.07331 4.88545L3.57339 8.38538" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="btn btn-next">
+            <svg width="14" height="14" viewBox="0 0 15 14" class="svg-control" xmlns="http://www.w3.org/2000/svg">
+                <rect x="13.6732" y="0.4" width="13.2" height="13.2" rx="6.6" transform="rotate(90 13.6732 0.4)"
+                    class="svg-control-round" stroke-width="0.8" />
+                <path d="M3.57324 5.61462L7.07317 9.11455L10.5731 5.61462" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+    </div>
+</div>

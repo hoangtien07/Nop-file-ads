@@ -1,0 +1,82 @@
+@import "./base.scss";
+@import "./responsive.scss";
+@import "./horizontal.scss";
+
+.advertising_symbol {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+.ads_header {
+  height: 40px;
+  padding-bottom: 4px;
+  padding-top: 10px;
+  margin-bottom: 0;
+  .ads_slogan {
+    width: auto;
+    height: fit-content;
+  }
+  .ads_logo {
+    height: 25px;
+    width: auto;
+  }
+}
+.ads_footer {
+  height: 32px;
+  padding: 4px 12px;
+}
+.carousel {
+  height: 168px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  .slick-list {
+    height: 100%;
+    .carousel-item {
+      padding: 6px;
+      height: 100%;
+      width: 110px;
+      box-shadow: none;
+
+      &:first-child {
+        padding: 0;
+      }
+      .ads_banner {
+        height: 162px;
+        .ads_banner_video {
+          height: 100%;
+        }
+      }
+      .item_img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 0.7px solid #e2e2e2;
+        margin-bottom: 8px;
+      }
+      .item_name {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16.9px;
+        text-align: center;
+        color: #494949 !important;
+        margin-bottom: 6px;
+      }
+      .item_more {
+        display: block;
+        margin: 0 auto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+      }
+    }
+  }
+  .slick-dots {
+    bottom: -17px;
+    zoom: 0.9;
+    li {
+      margin: 0 -2px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "items": [
+        {
+          "imgSrc": "/img/item-1.png",
+          "imgAlt": "item-1",
+          "itemName": "1Evening Primrose Oil (Epo) 1000Mg",
+          "itemDescription": "Giúp chống oxy hóa tế bào, cải thiện nội tiết tố nữ, giúp mịn da.",
+          "itemLink": "#",
+          "linkText": "Xem thêm",
+          "linkImgSrc": "/svg/arrow-right.svg",
+          "linkImgAlt": "Xem thêm"
+        },
+        {
+          "imgSrc": "/img/item-2.png",
+          "imgAlt": "item-1",
+          "itemName": "Brauer Baby Child Immunity Support",
+          "itemDescription": "Bổ sung Betacaroten & D3, giúp tăng đề kháng & hấp thu canxi.",
+          "itemLink": "#",
+          "linkText": "Xem thêm",
+          "linkImgSrc": "/svg/arrow-right.svg",
+          "linkImgAlt": "Xem thêm"
+        },
+        {
+          "imgSrc": "/img/item-3.png",
+          "imgAlt": "item-1",
+          "itemName": "Brauer Baby Kids Liquid Vitamin C",
+          "itemDescription": "Bổ sung vitamin C, hỗ trợ tăng cường sức đề kháng cho trẻ.",
+          "itemLink": "#",
+          "linkText": "Xem thêm",
+          "linkImgSrc": "/svg/arrow-right.svg",
+          "linkImgAlt": "Xem thêm"
+        },
+        {
+          "imgSrc": "/img/item-1.png",
+          "imgAlt": "item-1",
+          "itemName": "Evening Primrose Oil (Epo) 1000Mg",
+          "itemDescription": "Giúp chống oxy hóa tế bào, cải thiện nội tiết tố nữ, giúp mịn da.",
+          "itemLink": "#",
+          "linkText": "Xem thêm",
+          "linkImgSrc": "/svg/arrow-right.svg",
+          "linkImgAlt": "Xem thêm"
+        },
+        {
+          "imgSrc": "/img/item-2.png",
+          "imgAlt": "item-1",
+          "itemName": "Brauer Baby Child Immunity Support",
+          "itemDescription": "Bổ sung Betacaroten & D3, giúp tăng đề kháng & hấp thu canxi.",
+          "itemLink": "#",
+          "linkText": "Xem thêm",
+          "linkImgSrc": "/svg/arrow-right.svg",
+          "linkImgAlt": "Xem thêm"
+        },
+        {
+          "imgSrc": "/img/item-3.png",
+          "imgAlt": "item-1",
+          "itemName": "Brauer Baby Kids Liquid Vitamin C",
+          "itemDescription": "Bổ sung vitamin C, hỗ trợ tăng cường sức đề kháng cho trẻ.",
+          "itemLink": "#",
+          "linkText": "Xem thêm",
+          "linkImgSrc": "/svg/arrow-right.svg",
+          "linkImgAlt": "Xem thêm"
+        },
+        {
+          "imgSrc": "/img/item-1.png",
+          "imgAlt": "item-1",
+          "itemName": "Evening Primrose Oil (Epo) 1000Mg",
+          "itemDescription": "Giúp chống oxy hóa tế bào, cải thiện nội tiết tố nữ, giúp mịn da.",
+          "itemLink": "#",
+          "linkText": "Xem thêm",
+          "linkImgSrc": "/svg/arrow-right.svg",
+          "linkImgAlt": "Xem thêm"
+        },
+        {
+          "imgSrc": "/img/item-2.png",
+          "imgAlt": "item-1",
+          "itemName": "Brauer Baby Child Immunity Support",
+          "itemDescription": "Bổ sung Betacaroten & D3, giúp tăng đề kháng & hấp thu canxi.",
+          "itemLink": "#",
+          "linkText": "Xem thêm",
+          "linkImgSrc": "/svg/arrow-right.svg",
+          "linkImgAlt": "Xem thêm"
+        },
+        {
+          "imgSrc": "/img/item-3.png",
+          "imgAlt": "item-1",
+          "itemName": "9Brauer Baby Kids Liquid Vitamin C",
+          "itemDescription": "Bổ sung vitamin C, hỗ trợ tăng cường sức đề kháng cho trẻ.",
+          "itemLink": "#",
+          "linkText": "Xem thêm",
+          "linkImgSrc": "/svg/arrow-right.svg",
+          "linkImgAlt": "Xem thêm"
+        }
+        
+    ]
+}

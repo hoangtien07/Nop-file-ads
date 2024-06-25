@@ -1,0 +1,88 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Item Carousel Cards</title>
+
+    <!-- Cdn Bootstrap -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/css/pc-300x250.css">
+    <style>
+        .carousel{
+            height: 180px;
+            margin-bottom: 0;
+        }
+        .carousel .slick-list .carousel-item{
+            margin: 0 6px;
+            padding: 0;
+        }
+        .carousel .slick-list .carousel-item .ads_banner{
+            height: 180px;
+        }
+        .ads_banner .ads_banner_video{
+            max-height: 180px;
+        }
+        .ads_footer {
+            height: 36px;
+            padding: 6px 12px;
+        }
+    </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center position-relative">
+    <section class="d-flex flex-column pc-320x268">
+        <div class="position-relative"><img src="/img/ads_symbol.png" alt="advertising" class="advertising_symbol">
+        </div>
+        <!-- Header -->
+        <%- include('../partials/header.ejs') %>
+            <!-- Body -->
+            <div class="carousel pt-1">
+                <div class="carousel-item" style="height: 100%; width: 320px;padding: 0;">
+                    <%- include('../partials/banner.ejs') %>
+                </div>
+                <% for (let i=0; i < items.length; i +=1) { %>
+                    <div class="carousel-item">
+                        <a href="<%= items[i].itemLink %>" class="d-block"><img class="item_img"
+                                src="<%= items[i].imgSrc %>" alt="<%= items[i].imgAlt %>"></a>
+                        <a href="<%= items[i].itemLink %>" class="item_name">
+                            <%= items[i].itemName %>
+                        </a>
+                        <a href="#" class="item_more">Xem thêm <img src="/svg/arrow-right.svg" alt="more"
+                                style="display: inline-block;transform: translateY(-1px);"></a>
+                    </div>
+                <% } %>
+            </div>
+            <!-- Footer -->
+            <%- include('../partials/footer.ejs') %>
+    </section>
+    <a href="/" class="ads_home-btn">Quay lại...</a>
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="/js/app.js"></script>
+    <script type="module">
+        import { Sound, PC320x268 } from '/js/app.js';
+        document.addEventListener("DOMContentLoaded", function () {
+            Sound();
+            PC320x268();
+        });
+    </script>    
+</body>
+
+</html>

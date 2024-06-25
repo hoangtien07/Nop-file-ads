@@ -1,0 +1,15 @@
+
+<div class="col-lg-4 d-flex align-items-center item">
+    <a href="<%= item.itemLink %>"><img src="<%= item.imgSrc %>" alt="<%= item.imgAlt %>"
+            class="item__img"></a>
+    <div class="d-flex flex-column justify-content-center" style="flex:1;">
+        <span class="item_name">
+            <%= item.itemName %>
+        </span>
+        <span class="item_des">
+            <%= item.itemDescription %>
+        </span>
+        <a href="<%= item.itemLink %>" class="item_link">Xem thêm <img src="<%= item.linkImgSrc %>"
+                alt="<%= item.linkImgAlt %>"></a>
+    </div>
+</div>

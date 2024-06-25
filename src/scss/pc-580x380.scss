@@ -1,0 +1,25 @@
+@import "./base.scss";
+@import "./responsive.scss";
+@import "./pc-660x425.scss";
+
+section > .ads_banner {
+  height: 326px;
+}
+.ads_body {
+  .ads_banner-mini {
+    height: 52px;
+  }
+  .ads_banner-mini .ads_banner_continue {
+    width: 24px;
+    height: 24px;
+  }
+  .carousel-container {
+    bottom: 40px;
+    .carousel {
+      height: 226px;
+    }
+    .carousel .slick-list .carousel-item {
+      width: 148px;
+    }
+  }
+}
